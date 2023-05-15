@@ -1,0 +1,98 @@
+body {
+    background-color: aquamarine;
+}
+#okvir {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5,1fr);
+    width: 80%;
+}
+.labele {
+    grid-column: 1/2;
+    padding: 1.2em;
+}
+.inputi {
+    grid-column: 2/3;
+}
+#nav-bar {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+#naziv-predmeta-label {
+    grid-row: 2/3;
+}
+#nazivPredmeta {
+    grid-row: 2/3;
+}
+#tip-label {
+    grid-row: 3/4;
+}
+#tip {
+    grid-row: 3/4;
+}
+#vrijeme-početka-label {
+    grid-row: 4/5;
+}
+#vrijemePočetak {
+    grid-row: 4/5;
+}
+#vrijeme-kraja-label {
+    grid-row: 5/6;
+}
+#vrijemeKraj {
+    grid-row: 5/6;
+}
+#dan-u-sedmici-label {
+    grid-row: 6/7;
+}
+#dan {
+    grid-row: 6/7;
+}
+@media screen and (max-width: 600px) {
+    #okvir {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(10em,auto);
+    }
+    .col-1 {
+        grid-column: 1/2;
+    }
+    #nav-bar{
+        grid-row: 1/2;
+    }
+    #naziv-predmeta-label {
+        grid-row: 2/3;
+    }
+    #nazivPredmeta {
+        grid-row: 3/4;
+    } 
+    #tip-label {
+        grid-row: 4/5;
+    }
+    #tip {
+        grid-row: 5/6;
+    }
+    #vrijeme-početka-label {
+        grid-row: 6/7;
+    }
+    #vrijemePočetak {
+        grid-row: 7/8;
+    }
+    #vrijeme-kraja-label {
+        grid-row: 8/9;
+    }
+    #vrijemeKraj {
+        grid-row: 9/10;
+    }
+    #dan-u-sedmici-label {
+        grid-row: 10/11;
+    }
+    #dan {
+        grid-row: 11/12;
+    }
+}
+@media screen and (min-width: 1200px) {
+    #okvir {
+        width: 60%;
+    } 
+ }

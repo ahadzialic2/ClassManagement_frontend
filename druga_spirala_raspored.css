@@ -1,0 +1,1135 @@
+#okvir {
+    display: grid;
+    grid-template-columns: repeat(32,0.3fr); 
+    grid-template-rows: repeat(7,1.5fr);
+}
+#nav-bar {
+    grid-column-start: 1;
+    grid-column-end: 33;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    background-color: darkgray;
+}
+#nav-bar li {
+    display: inline;
+}
+#podaci-student-nav-bar {
+    grid-column-start: 1;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#planiranje-nastavnik-nav-bar{
+    grid-column-start: 11;
+    grid-column-end: 21;    
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#raspored-nav-bar {
+    grid-column-start: 21;
+    grid-column-end: 31; 
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+
+#satnica-1 {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+}
+#satnica-2 {
+    grid-column-start: 10;
+    grid-column-end: 12;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+}
+#satnica-3 {
+    grid-column-start: 14;
+    grid-column-end: 16;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+}
+#satnica-4 {
+    grid-column-start: 20;
+    grid-column-end: 22;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+}
+#satnica-5 {
+    grid-column-start: 24;
+    grid-column-end: 26;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+}
+#satnica-6 {
+    grid-column-start: 28;
+    grid-column-end: 30;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+}
+#ponedjeljak {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: right;
+    margin-right: 10px;
+}
+#utorak {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: right;
+    margin-right: 10px;
+}
+#srijeda {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    text-align: right;
+    margin-right: 10px;
+}
+#četvrtak {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    text-align: right;
+    margin-right: 10px;
+}
+#petak {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    text-align: right;
+    margin-right: 10px;
+}
+
+
+#wt-predavanje {
+    grid-column-start: 9;
+    grid-column-end: 15;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: center;
+    background-color: lightskyblue;
+    border-right: solid;
+    border-left: solid;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#wt-vježbe {
+    grid-column-start: 15;
+    grid-column-end: 18;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: center;
+    background-color: lightskyblue;
+    border-right: dashed;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#rma-predavanje {
+    grid-column-start: 19;
+    grid-column-end: 25;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    text-align: center;
+    background-color: lightskyblue;
+    border-left: solid;
+    border-right: solid;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#rma-vježbe {
+    grid-column-start: 16;
+    grid-column-end: 19;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: center;
+    background-color: lightskyblue;
+    border-left: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#dm-tutorijal {
+    grid-column-start: 19;
+    grid-column-end: 23;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: center;
+    background-color: lightskyblue;
+    border-left: solid;
+    border-right: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#dm-predavanje {
+    grid-column-start: 23;
+    grid-column-end: 29;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: center;
+    background-color: lightskyblue;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#oi-predavanje {
+    grid-column-start: 15;
+    grid-column-end: 21;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    text-align: center;
+    background-color: lightskyblue;
+    border-bottom: solid;
+    border-width: thin;
+}
+#blank {
+    grid-column-start: 21;
+    grid-column-end: 27;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    text-align: center;
+    background-color: gainsboro;
+    border-right: solid;
+    border-bottom: solid;
+    border-left: solid;
+    border-width: thin;
+}
+
+#c1-1 {
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: gainsboro;
+    border-left: solid;
+    border-top: solid;
+    border-bottom: solid;
+    border-right: dashed;
+    border-width: thin;
+}
+#c1-2 {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: gainsboro;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c1-11 {
+    grid-column-start: 18;
+    grid-column-end: 19;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: gainsboro;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c1-19 {
+    grid-column-start: 25;
+    grid-column-end: 26;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c1-20 {
+    grid-column-start: 26;
+    grid-column-end: 27;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: gainsboro;
+    border-right: solid;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c1-21{
+    grid-column-start: 27;
+    grid-column-end: 28;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c1-22 {
+    grid-column-start: 28;
+    grid-column-end: 29;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c1-23 {
+    grid-column-start: 29;
+    grid-column-end: 30;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c1-24{
+    grid-column-start: 30;
+    grid-column-end: 31;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: gainsboro;
+    border-right: solid;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c1-25 {
+    grid-column-start: 31;
+    grid-column-end: 32;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c1-26 {
+    grid-column-start: 32;
+    grid-column-end: 33;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: gainsboro;
+    border-right: solid;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c2-1 {
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: gainsboro;
+    border-left: solid;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c2-2 {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: gainsboro;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c2-3 {
+    grid-column-start: 9;
+    grid-column-end: 10;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: gainsboro;
+    border-left: solid;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c2-4 {
+    grid-column-start: 10;
+    grid-column-end: 11;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: gainsboro;
+    border-right: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c2-5 {
+    grid-column-start: 11;
+    grid-column-end: 12;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c2-6 {
+    grid-column-start: 12;
+    grid-column-end: 13;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: gainsboro;
+    border-right: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c2-7 {
+    grid-column-start: 13;
+    grid-column-end: 14;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c2-8 {
+    grid-column-start: 14;
+    grid-column-end: 15;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: gainsboro;
+    border-right: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c2-9 {
+    grid-column-start: 15;
+    grid-column-end: 16;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: gainsboro;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c2-23 {
+    grid-column-start: 29;
+    grid-column-end: 30;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-bottom: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c2-24 {
+    grid-column-start: 30;
+    grid-column-end: 31;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: gainsboro;
+    border-right: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c2-25 {
+    grid-column-start: 31;
+    grid-column-end: 32;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c2-26 {
+    grid-column-start: 32;
+    grid-column-end: 33;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    background-color: gainsboro;
+    border-right: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c3-1 {
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: gainsboro;
+    border-left: solid;
+    border-bottom: solid;
+    border-right: dashed;
+    border-width: thin;
+}
+#c3-2 {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: gainsboro;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c3-3 {
+    grid-column-start: 9;
+    grid-column-end: 10;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: gainsboro;
+    border-bottom: solid;
+    border-right: dashed;
+    border-left: solid;
+    border-width: thin;
+}
+#c3-4 {
+    grid-column-start: 10;
+    grid-column-end: 11;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: gainsboro;
+    border-right: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c3-5 {
+    grid-column-start: 11;
+    grid-column-end: 12;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c3-6 {
+    grid-column-start: 12;
+    grid-column-end: 13;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: gainsboro;
+    border-right: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c3-7 {
+    grid-column-start: 13;
+    grid-column-end: 14;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c3-8 {
+    grid-column-start: 14;
+    grid-column-end: 15;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: gainsboro;
+    border-right: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c3-21 {
+    grid-column-start: 27;
+    grid-column-end: 28;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c3-22 {
+    grid-column-start: 28;
+    grid-column-end: 29;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c3-23 {
+    grid-column-start: 29;
+    grid-column-end: 30;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c3-24 {
+    grid-column-start: 30;
+    grid-column-end: 31;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: gainsboro;
+    border-right: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c3-25 {
+    grid-column-start: 31;
+    grid-column-end: 32;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c3-26 {
+    grid-column-start: 32;
+    grid-column-end: 33;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    background-color: gainsboro;
+    border-right: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c4-1 {
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    background-color: gainsboro;
+    border-left: solid;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c4-2 {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    background-color: gainsboro;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c4-3 {
+    grid-column-start: 9;
+    grid-column-end: 10;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    background-color: gainsboro;
+    border-left: solid;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c4-4 {
+    grid-column-start: 10;
+    grid-column-end: 11;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    background-color: gainsboro;
+    border-right: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c4-5 {
+    grid-column-start: 11;
+    grid-column-end: 12;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c4-6 {
+    grid-column-start: 12;
+    grid-column-end: 13;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    background-color: gainsboro;
+    border-right: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c4-7 {
+    grid-column-start: 13;
+    grid-column-end: 14;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c4-8 {
+    grid-column-start: 14;
+    grid-column-end: 15;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    background-color: gainsboro;
+    border-bottom: solid;
+    border-right: solid;
+    border-width: thin;
+}
+#c4-9 {
+    grid-column-start: 15;
+    grid-column-end: 16;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c4-10 {
+    grid-column-start: 16;
+    grid-column-end: 17;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    background-color: gainsboro;
+    border-right: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c4-11 {
+    grid-column-start: 17;
+    grid-column-end: 18;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c4-12 {
+    grid-column-start: 18;
+    grid-column-end: 19;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    background-color: gainsboro;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c4-13 {
+    grid-column-start: 19;
+    grid-column-end: 20;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    background-color: gainsboro;
+    border-left: solid;
+    border-bottom: solid;
+    border-right: dashed;
+    border-width: thin;
+}
+#c4-14 {
+    grid-column-start: 20;
+    grid-column-end: 21;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    background-color: gainsboro;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c4-15 {
+    grid-column-start: 21;
+    grid-column-end: 22;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    background-color: gainsboro;
+    border-left: solid;
+    border-bottom: solid;
+    border-right: dashed;
+    border-width: thin;
+}
+#c4-16 {
+    grid-column-start: 22;
+    grid-column-end: 23;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    background-color: gainsboro;
+    border-right: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c4-17 {
+    grid-column-start: 23;
+    grid-column-end: 24;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c4-18 {
+    grid-column-start: 24;
+    grid-column-end: 25;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    background-color: gainsboro;
+    border-right: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c4-19 {
+    grid-column-start: 25;
+    grid-column-end: 26;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c4-20 {
+    grid-column-start: 26;
+    grid-column-end: 27;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    background-color: gainsboro;
+    border-right: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c4-21 {
+    grid-column-start: 27;
+    grid-column-end: 28;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c4-22 {
+    grid-column-start: 28;
+    grid-column-end: 29;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c4-23 {
+    grid-column-start: 29;
+    grid-column-end: 30;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c4-24 {
+    grid-column-start: 30;
+    grid-column-end: 31;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    background-color: gainsboro;
+    border-right: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c4-25 {
+    grid-column-start: 31;
+    grid-column-end: 32;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c4-26 {
+    grid-column-start: 32;
+    grid-column-end: 33;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    background-color: gainsboro;
+    border-right: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c5-1 {
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    background-color: gainsboro;
+    border-left: solid;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c5-2 {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    background-color: gainsboro;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c5-3 {
+    grid-column-start: 9;
+    grid-column-end: 10;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    background-color: gainsboro;
+    border-left: solid;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c5-4 {
+    grid-column-start: 10;
+    grid-column-end: 11;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    background-color: gainsboro;
+    border-right: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c5-5 {
+    grid-column-start: 11;
+    grid-column-end: 12;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c5-6 {
+    grid-column-start: 12;
+    grid-column-end: 13;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    background-color: gainsboro;
+    border-right: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c5-7 {
+    grid-column-start: 13;
+    grid-column-end: 14;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c5-8 {
+    grid-column-start: 14;
+    grid-column-end: 15;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    background-color: gainsboro;
+    border-bottom: solid;
+    border-right: solid;
+    border-width: thin;
+}
+#c5-9 {
+    grid-column-start: 15;
+    grid-column-end: 16;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c5-10 {
+    grid-column-start: 16;
+    grid-column-end: 17;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    background-color: gainsboro;
+    border-right: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c5-11 {
+    grid-column-start: 17;
+    grid-column-end: 18;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c5-12 {
+    grid-column-start: 18;
+    grid-column-end: 19;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    background-color: gainsboro;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c5-13 {
+    grid-column-start: 19;
+    grid-column-end: 20;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    background-color: gainsboro;
+    border-left: solid;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c5-14 {
+    grid-column-start: 20;
+    grid-column-end: 21;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    background-color: gainsboro;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c5-15 {
+    grid-column-start: 21;
+    grid-column-end: 22;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    background-color: gainsboro;
+    border-left: solid;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c5-16 {
+    grid-column-start: 22;
+    grid-column-end: 23;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    background-color: gainsboro;
+    border-right: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c5-17 {
+    grid-column-start: 23;
+    grid-column-end: 24;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c5-18 {
+    grid-column-start: 24;
+    grid-column-end: 25;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    background-color: gainsboro;
+    border-right: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c5-19 {
+    grid-column-start: 25;
+    grid-column-end: 26;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c5-20 {
+    grid-column-start: 26;
+    grid-column-end: 27;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    background-color: gainsboro;
+    border-right: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c5-21 {
+    grid-column-start: 27;
+    grid-column-end: 28;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c5-22 {
+    grid-column-start: 28;
+    grid-column-end: 29;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c5-23 {
+    grid-column-start: 29;
+    grid-column-end: 30;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c5-24 {
+    grid-column-start: 30;
+    grid-column-end: 31;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    background-color: gainsboro;
+    border-right: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c5-25 {
+    grid-column-start: 31;
+    grid-column-end: 32;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    background-color: gainsboro;
+    border-right: dashed;
+    border-bottom: solid;
+    border-width: thin;
+}
+#c5-26 {
+    grid-column-start: 32;
+    grid-column-end: 33;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    background-color: gainsboro;
+    border-right: solid;
+    border-bottom: solid;
+    border-width: thin;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: xx-small;
+    }
+}

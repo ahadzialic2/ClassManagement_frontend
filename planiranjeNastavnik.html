@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>Planiranje (nastavnik)</title>
+    <link rel="stylesheet" href="planiranjeNastavnik.css">
+    <meta name="viewport" content="width=360, initial-scale=1.0">
+    </head>
+
+    <body>
+        <div id="okvir">
+
+        <div class="col-1" id="nav-bar">
+            <ul>
+              <li id="podaci-student-nav-bar"><a href="podaciStudent.html">Podaci za studenta</a></li>
+              <li id="planiranje-nastavnik-nav-bar"><a href="planiranjeNastavnik.html">Plan za nastavnika</a></li>
+              <li id="raspored-nav-bar"><a href="raspored.html">Raspored</a></li>
+              <li><a href="obavijesti.html">Obavijesti</a></li>
+              <li><a href="posjecenost.html">Posjećenost</a></li>
+            </ul>
+        </div>
+        <label class="labele col-1" id="naziv-predmeta-label">Naziv predmeta:</label>
+        <input type="text" class="inputi col-1" id="nazivPredmeta" >
+        <label class="labele col-1" id="tip-label">Tip:</label>
+        <select class="inputi col-1" id="tip"> 
+            <option value="predavanje">predavanje</option>
+            <option value="vježbe">vježbe</option>
+        </select>
+        <label class="labele col-1" id="vrijeme-početka-label">Vrijeme početka:</label>
+        <input type="time" class="inputi col-1" id="vrijemePočetak"> 
+        <label class="labele col-1" id="vrijeme-kraja-label">Vrijeme kraja:</label>
+        <input type="time" class="inputi col-1" id="vrijemeKraj"> <br>
+        <label class="labele col-1" id="dan-u-sedmici-label">Dan u sedmici:</label>
+        <select class="inputi col-1" id="dan">
+            <option>ponedjeljak</option>
+            <option>utorak</option>
+            <option>srijeda</option>
+            <option>četvrtak</option>
+            <option>petak</option>
+        </select>    
+        </div>
+        <script src="validacija.js"></script>
+        <script src="planiranjeNastavnik.js"></script>
+    </body>
+
+</html>

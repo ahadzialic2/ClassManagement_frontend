@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=320, initial-scale=1">
+    <title>Raspored</title>
+    <link type="text/css" rel="stylesheet" href="raspored.css">
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class=nav-bar>
+        <ul>
+            <li id="podaci-student"><a href="podaciStudent.html">Podaci za studenta</a></li>
+            <li><a href="planiranjeNastavnik.html">Plan za nastavnika</a></li>
+            <li><a href="raspored.html">Raspored</a></li>
+            <li><a href="obavijesti.html">Obavijesti</a></li>
+            <li><a href="posjecenost.html">Posjećenost</a></li>
+        </ul>
+    </div>
+
+
+    <form>
+        <div class="form-group">
+            <label for="nazivPredmetaForm">Naziv predmeta</label>
+            <input name="nazivPredmeta" type="text" class="form-control" id="nazivPredmetaForm"
+                onfocus="resetujTipVrijemeDan()">
+            <label for="tipAktivnostiForm">Tip aktivnosti</label>
+            <input name="tipAktivnosti" type="text" class="form-control" id="tipAktivnostiForm"
+                onfocus="resetujPredmetVrijemeDan()"> 
+            <label for="vrijemeTrajanjaForm">Vrijeme trajanja (u minutama)</label>
+            <input name="vrijemeTrajanja" type="number" class="form-control" id="vrijemeTrajanjaForm"
+                onfocus="resetujPredmetTipDan()"> 
+            <label for="danForm">Dan</label>
+            <input name="dan" type="text" class="form-control" id="danForm" onfocus="resetujPredmetTipVrijeme()">
+        </div>
+        <button type="button" class="btn btn-primary" onclick="filter()">Filtriraj</button>
+    </form>
+
+    <div id="tablicaRaspored">
+        <table class="tabela-2">
+            <tr>
+                <th id="satnica1" class="satnica" colspan="2">08:00</th>
+                <th id="satnica2" class="satnica" colspan="4">10:00</th>
+                <th id="satnica3" class="satnica" colspan="4">12:00</th>
+
+                <th id="satnica4" class="satnica" colspan="6">15:00</th>
+                <th id="satnica5" class="satnica" colspan="4">17:00</th>
+                <th id="satnica6" class="satnica" colspan="4">19:00</th>
+                <th class="satnica"></th>
+                <th class="satnica"></th>
+                <th class="satnica"></th>
+
+
+            </tr>
+            <tr>
+                <td class="dan">Ponedjeljak</td>
+                <td></td>
+                <td class="solid-tabela"></td>
+                <td class="solid-tabela p-v-t predmeti" colspan="6">WT<br>predavanje</td>
+                <td class="solid-tabela p-v-t predmeti" colspan="3">WT<br>vježbe</td>
+                <td></td>
+                <td class="solid-tabela p-v-t predmeti" colspan="6">RMA<br>predavanje</td>
+                <td></td>
+                <td></td>
+                <td class="solid-tabela"></td>
+                <td></td>
+                <td></td>
+                <td class="solid-tabela"></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="dan">Utorak</td>
+                <td></td>
+                <td class="solid-tabela"></td>
+                <td></td>
+                <td class="solid-tabela"></td>
+                <td></td>
+                <td class="solid-tabela"></td>
+                <td></td>
+                <td class="solid-tabela"></td>
+                <td></td>
+                <td class="solid-tabela p-v-t predmeti" colspan="3">RMA<br>vježbe</td>
+                <td class="solid-tabela p-v-t predmeti" colspan="4">DM<br>tutorijal</td>
+                <td class="p-v-t predmeti" colspan="6">DM<br>predavanje</td>
+                <td></td>
+                <td class="solid-tabela"></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="dan">Srijeda</td>
+                <td></td>
+                <td class="solid-tabela"></td>
+                <td></td>
+                <td class="solid-tabela"></td>
+                <td></td>
+                <td class="solid-tabela"></td>
+                <td></td>
+                <td class="solid-tabela"></td>
+                <td class="solid-tabela p-v-t predmeti" colspan="6">OI<br>predavanje</td>
+                <td class="solid-tabela" colspan="6"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="solid-tabela"></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="dan">Četvrtak</td>
+                <td></td>
+                <td class="solid-tabela"></td>
+                <td></td>
+                <td class="solid-tabela"></td>
+                <td></td>
+                <td class="solid-tabela"></td>
+                <td></td>
+                <td class="solid-tabela"></td>
+                <td></td>
+                <td class="solid-tabela"></td>
+                <td></td>
+                <td class="solid-tabela"></td>
+                <td></td>
+                <td class="solid-tabela"></td>
+                <td></td>
+                <td class="solid-tabela"></td>
+                <td></td>
+                <td class="solid-tabela"></td>
+                <td></td>
+                <td class="solid-tabela"></td>
+                <td></td>
+                <td class="solid-tabela"></td>
+                <td>&nbsp;</td>
+                <td class="solid-tabela">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="dan">Petak</td>
+                <td>&nbsp;</td>
+                <td class="solid-tabela">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td class="solid-tabela">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td class="solid-tabela">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td class="solid-tabela">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td class="solid-tabela">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td class="solid-tabela">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td class="solid-tabela">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td class="solid-tabela">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td class="solid-tabela">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td class="solid-tabela">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td class="solid-tabela">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td class="solid-tabela">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+
+
+        </table>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="filtriraj.js"></script>
+    <script src="raspored.js"></script>
+
+</body>
+
+</html>

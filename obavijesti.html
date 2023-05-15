@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=500px, initial-scale=1.0">
+    <title>Obavijesti</title>
+
+    <style>
+        #okvir {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4,10em);
+        }
+        #meni {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+        #meni li {
+            display: inline;
+            list-style: none;
+        }
+        #obavijest-okvir {
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+        #obavijest-okvir-2 {
+            grid-column: 1/2;
+            grid-row: 3/4;
+            margin-top: 1em;
+        }
+        #obavijest-okvir-3 {
+            grid-column: 1/2;
+            grid-row: 4/5;
+            margin-top: 1em;
+        }
+        .okvir-2 {
+            border-radius: 2em;
+            background: lightblue;
+            padding: 0.5em;
+            padding-bottom: 0;
+            width: 30em;
+            height: 10em;
+            width: 80%;
+        }
+        .okvir-2:hover {
+            border-style: solid;
+            border-width: 2px;
+            border-color: blue;
+        }
+        p {
+            float: right;
+            position: relative;
+            top: 2.5em;
+            right:-2em;
+        }
+        .close {
+            position: relative;
+            float: right;
+            top: -3.2em;
+            right: -0.5em; 
+            color: blue;
+            background-color: lightblue;
+            font-size: xx-large;
+            border-radius: 0.4em;
+            border-style: solid;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .iks {
+            border-radius: 0.2em;
+            border-style: solid;
+            border-width: 2px;
+            font-size: xx-large;
+            padding-left: 0.3em;
+            padding-right: 0.3em;
+        }
+        .close:hover {
+            color: white;
+            background-color: blue;
+            border-color: white;
+        }
+        h1 {
+            font-weight: normal;
+            text-align: center;
+        }
+        p,h1 {
+            color: blue;
+        }
+@media only screen and (max-width: 500px) {
+            .okvir-2 {
+                width: 500px;
+            }
+        }
+
+    </style>
+    
+</head>
+    <body>
+        <div id="okvir">
+        <div id="meni">
+            <ul>
+            <li><a href="podaciStudent.html">Podaci za studenta</a></li>
+            <li><a href="planiranjeNastavnik.html">Plan za nastavnika</a></li>
+            <li><a href="raspored.html">Raspored</a></li>
+            <li><a href="obavijesti.html">Obavijesti</a></li>
+            <li><a href="posjecenost.html">Posjećenost</a></li>
+            </ul>
+        </div>
+        
+        <div class="okvir-2" id="obavijest-okvir">
+        <h1>Slijedi: FWT predavanje</h1>
+        <span class="iks close"><strong>x</strong></span>
+        <p>za 15 minuta</p>
+        </div>
+
+        <div class="okvir-2" id="obavijest-okvir-2">
+            <h1>Slijedi: FWT predavanje</h1>
+            <span class="iks close"><strong>x</strong></span>
+            <p>za 15 minuta</p>
+        </div>
+
+        <div class="okvir-2" id="obavijest-okvir-3">
+            <h1>Slijedi: FWT predavanje</h1>
+            <span class="iks close"><strong>x</strong></span>
+            <p>za 15 minuta</p>
+        </div>
+       
+
+        
+        </div>
+    </body>
+</html>
